@@ -18,19 +18,16 @@ CREATE TABLE IF NOT EXISTS BOOKS (
 
 CREATE TABLE IF NOT EXISTS AUTHORS (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(100) NOT NULL,
-    last_name VARCHAR(100) NOT NULL,
-    bio TEXT
+    author_name VARCHAR(100) NOT NULL,
+    
 );
 
 
 
 CREATE TABLE IF NOT EXISTS CUSTOMERS (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(100) NOT NULL,
-    last_name VARCHAR(100) NOT NULL,
+    customer_name VARCHAR(100) NOT NULL,
     email VARCHAR(150) UNIQUE,
-    phone VARCHAR(20),
     address VARCHAR(255)
 );
 
